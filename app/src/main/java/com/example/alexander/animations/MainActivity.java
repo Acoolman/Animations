@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         roundChart = (RoundChart) findViewById(R.id.rcDiagram);
-        //Animation animationFadeIn = AnimationUtils.loadAnimation(this,R.anim.fade_in);
+        Animation animationFadeIn = AnimationUtils.loadAnimation(this,R.anim.fade_in);
         animationFadeOut = AnimationUtils.loadAnimation(this,R.anim.fade_out);
         roundChart.setAnimation(animationFadeOut);
         animationFadeOut.setAnimationListener(this);
